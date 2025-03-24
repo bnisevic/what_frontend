@@ -13,7 +13,7 @@ export default defineConfig({
     port: 3000,
     host: true,
     proxy: {
-      '/api': 'http://backend:8000'
+      '/api': process.env.VITE_BACKEND_URL
     }
   }
 })
